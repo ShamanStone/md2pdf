@@ -1,0 +1,15 @@
+name = "report"
+description = "Academic report: A4 serif, justified, numbered headings, page numbers"
+
+[page]
+size = "A4"
+margin = "2.5cm"
+page_numbers = true
+
+[font]
+family = "'DejaVu Serif', Georgia, 'Times New Roman', serif"
+size = "11pt"
+line_height = "1.6"
+
+[code]
+style = "friendly"

@@ -1,0 +1,15 @@
+name = "resume"
+description = "One-page resume: US Letter, sans-serif, accent section headers"
+
+[page]
+size = "Letter"
+margin = "1.4cm 1.6cm"
+page_numbers = false
+
+[font]
+family = "'DejaVu Sans', Helvetica, Arial, sans-serif"
+size = "10.5pt"
+line_height = "1.35"
+
+[code]
+style = "default"

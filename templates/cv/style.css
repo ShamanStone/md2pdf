@@ -1,0 +1,68 @@
+/* cv theme — formal academic curriculum vitae, multi-page.
+   Convention for your Markdown:
+     # Your Name
+     First paragraph = contact / affiliation line (centered under the name)
+     ## Section          -> Education / Publications / Grants / Teaching ...
+     ### Entry title      -> a position/award; trailing *dates* float right
+*/
+
+body { color: #000; }
+
+/* Name */
+h1 {
+  font-size: 2.0em;
+  text-align: center;
+  margin: 0 0 0.15em 0;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+/* Contact / affiliation line: first paragraph right after the name */
+h1 + p {
+  text-align: center;
+  color: #333;
+  font-size: 0.95em;
+  margin: 0 0 1.2em 0;
+}
+
+/* Section headers */
+h2 {
+  font-size: 1.2em;
+  font-variant: small-caps;
+  letter-spacing: 0.5px;
+  margin: 1.3em 0 0.5em 0;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #333;
+}
+
+/* Entry titles. Put dates in *italics* to float them to the right margin. */
+h3 {
+  font-size: 1.0em;
+  font-weight: bold;
+  margin: 0.7em 0 0.15em 0;
+}
+h3 em {
+  float: right;
+  font-style: italic;
+  font-weight: normal;
+  color: #333;
+}
+
+p { margin: 0.35em 0; }
+
+/* Publication / entry lists: hanging indent reads well for references */
+ul, ol { margin: 0.3em 0 0.5em 1.4em; padding: 0; }
+li { margin: 0.25em 0; padding-left: 0.2em; }
+
+a { color: #000; text-decoration: underline; }
+
+blockquote {
+  margin: 0.6em 1.4em;
+  font-style: italic;
+  color: #333;
+}
+
+hr { border: none; border-top: 1px solid #ccc; margin: 1em 0; }
+
+table { border-collapse: collapse; width: 100%; margin: 0.5em 0; }
+td, th { padding: 3px 7px; vertical-align: top; text-align: left; }

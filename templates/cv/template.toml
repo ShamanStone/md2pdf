@@ -1,0 +1,15 @@
+name = "cv"
+description = "Academic CV: A4 serif, centered name, section rules, page numbers"
+
+[page]
+size = "A4"
+margin = "2cm 2.2cm"
+page_numbers = true
+
+[font]
+family = "'DejaVu Serif', Georgia, 'Times New Roman', serif"
+size = "11pt"
+line_height = "1.45"
+
+[code]
+style = "default"

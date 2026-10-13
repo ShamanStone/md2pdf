@@ -1,0 +1,15 @@
+name = "default"
+description = "Clean A4, sans-serif, striped tables — good for most notes/protocols"
+
+[page]
+size = "A4"
+margin = "2cm"
+page_numbers = false
+
+[font]
+family = "'DejaVu Sans', Helvetica, Arial, sans-serif"
+size = "11pt"
+line_height = "1.5"
+
+[code]
+style = "default"

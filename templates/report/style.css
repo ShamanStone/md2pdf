@@ -1,0 +1,75 @@
+/* report theme — formal serif write-up, justified, numbered headings */
+
+body {
+  color: #000;
+  text-align: justify;
+  hyphens: auto;
+  counter-reset: h2;
+}
+
+h1 {
+  font-size: 2em;
+  text-align: center;
+  margin: 0 0 1em 0;
+  padding-bottom: 0.3em;
+  border-bottom: 1.5px solid #333;
+}
+
+h2 {
+  font-size: 1.4em;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  counter-reset: h3;
+}
+h2::before {
+  counter-increment: h2;
+  content: counter(h2) ".\00a0 ";
+}
+
+h3 {
+  font-size: 1.15em;
+  margin-top: 1.1em;
+  margin-bottom: 0.4em;
+}
+h3::before {
+  counter-increment: h3;
+  content: counter(h2) "." counter(h3) "\00a0 ";
+}
+
+p { margin: 0.5em 0; }
+p + p { text-indent: 1.2em; }
+
+a { color: #000; text-decoration: underline; }
+
+blockquote {
+  margin: 0.8em 1.5em;
+  font-style: italic;
+  color: #333;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1em 0;
+  font-size: 0.95em;
+  text-align: left;
+}
+th, td { border: 1px solid #888; padding: 5px 9px; }
+th { background: #ececec; }
+caption { caption-side: bottom; font-size: 0.85em; color: #555; padding-top: 0.3em; }
+
+code {
+  font-family: 'DejaVu Sans Mono', monospace;
+  font-size: 0.88em;
+}
+pre {
+  background: #f5f3ee;
+  border: 1px solid #ddd4c2;
+  border-radius: 3px;
+  padding: 0.7em 1em;
+  text-align: left;
+  overflow-x: auto;
+}
+pre code { font-size: 0.85em; }
+
+img { max-width: 100%; }
